@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+
+
+  get 'inicio/pagina_principal'
+
+  get 'productos' => 'inicio#productos'
+  get 'recetas' => 'inicio#recetas'
+  get 'contacto' => 'inicio#contacto'
+
+
+  root 'inicio#pagina_principal'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

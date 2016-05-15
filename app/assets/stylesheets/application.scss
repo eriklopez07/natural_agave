@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+html, body{
+  height: 100%;
+}
+
+.navbar {
+  background-color: #F4D06C;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  .nav-link{
+    color: white;
+  }
+  .nav-link:hover{
+    color: #F4D06C;
+  }
+  .navbar-brand{
+    margin-top: -20px;
+  }
+
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .slider-size {
+        height: auto;
+    }
+    .slider-size > img {
+         width: 80%;
+    }
+}
+
+/* tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+    .slider-size {
+        height: auto;
+    }
+    .slider-size > img {
+        width: 80%;
+    }
+}
+
+/* laptops */
+@media (max-width: 1023px) and (min-width: 992px) {
+    .slider-size {
+         height: 200px;
+    }
+    .slider-size > img {
+        width: 80%;
+    }
+}
+
+/* desktops */
+@media (min-width: 1024px) {
+    .slider-size {
+        height: 300px;
+    }
+    .slider-size > img {
+        width: 60%;
+    }
+}
+.navbar-nav > li > a {
+  color:white;
+}
+#languages{
+  background-color: #747474;
+  margin-top: -7px;
+  margin-bottom: -7px;
+  font-size: 1.3rem;
+}
